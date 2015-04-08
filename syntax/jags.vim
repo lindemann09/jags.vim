@@ -49,12 +49,13 @@ syn match   jagsFloat /\.\d\+\([Ee][-+]\=\d\+\)\=/
 " floating point number with no fractional part and optional exponent
 syn match   jagsFloat /\d\+[Ee][-+]\=\d\+/
 syn match   jagsOperator /[<-]\|[\~]/
+syn match   jagsInterval /I(.*)/
 
 " ---------------------------------------------------------------------
 "  Special: {{{1
 syn match   jagsDelimiter /[,;:\[\]]/
 " A bunch of distributions
-syn keyword jagsDistribution dbern pbern qbern dbeta pbeta qbeta dbin pbin qbin dchisqr pchisqr qchisqr ddexp pdexp qdexp dexp pexp qexp df pf qf dgamma pgamma qgamma dgen.gamma pgen.gamma qgen.gamma dhyper phyper qhyper dlogis plogis qlogis dlnorm plnorm qlnorm dnegbin pnegbin qnegbin dnchisqr pnchisqr qnchisqr dnorm pnorm qnorm dpar ppar qpar dpois ppois qpois dt pt qt dweib pweib qweib ddirch ddirich dweibull dnbinom dchisq dbinom
+syn keyword jagsDistribution dbern pbern qbern dbeta pbeta qbeta dbin pbin qbin dchisqr pchisqr qchisqr ddexp pdexp qdexp dexp pexp qexp df pf qf dgamma pgamma qgamma dgen.gamma pgen.gamma qgen.gamma dhyper phyper qhyper dlogis plogis qlogis dlnorm plnorm qlnorm dnegbin pnegbin qnegbin dnchisqr pnchisqr qnchisqr dnorm pnorm qnorm dpar ppar qpar dpois ppois qpois dt pt qt dweib pweib qweib ddirch ddirich dweibull dnbinom dchisq dbinom dinterval
 
 " ---------------------------------------------------------------------
 "  Error: {{{1
@@ -84,6 +85,7 @@ if version >= 508 || !exists("did_jags_syn_inits")
   HiLink jagsDistribution   Function
   HiLink jagsFunction       Function
   HiLink jagsDelimiter      Delimiter
+  HiLink jagsInterval       Constant
   
   delcommand HiLink
 endif
