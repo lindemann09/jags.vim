@@ -92,4 +92,4 @@ endif
 
 let b:current_syntax = "jags"
 
-" vim: ts=8 sw=2 fdm=marker
+set ts=4 sw=2 expandtab 
