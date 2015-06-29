@@ -55,7 +55,7 @@ syn match   jagsInterval /I(.*)/
 "  Special: {{{1
 syn match   jagsDelimiter /[,;:\[\]]/
 " A bunch of distributions
-syn keyword jagsDistribution dbern pbern qbern dbeta pbeta qbeta dbin pbin qbin dchisqr pchisqr qchisqr ddexp pdexp qdexp dexp pexp qexp df pf qf dgamma pgamma qgamma dgen.gamma pgen.gamma qgen.gamma dhyper phyper qhyper dlogis plogis qlogis dlnorm plnorm qlnorm dnegbin pnegbin qnegbin dnchisqr pnchisqr qnchisqr dnorm pnorm qnorm dpar ppar qpar dpois ppois qpois dt pt qt dweib pweib qweib ddirch ddirich dweibull dnbinom dchisq dbinom dinterval
+syn keyword jagsDistribution dbern pbern qbern dbeta pbeta qbeta dbin pbin qbin dchisqr pchisqr qchisqr ddexp pdexp qdexp dexp pexp qexp df pf qf dgamma pgamma qgamma dgen.gamma pgen.gamma qgen.gamma dhyper phyper qhyper dlogis plogis qlogis dlnorm plnorm qlnorm dnegbin pnegbin qnegbin dnchisqr pnchisqr qnchisqr dnorm pnorm qnorm dpar ppar qpar dpois ppois qpois dt pt qt dweib pweib qweib ddirch ddirich dweibull dnbinom dchisq dbinom dinterval dcat
 
 " ---------------------------------------------------------------------
 "  Error: {{{1
