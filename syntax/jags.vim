@@ -82,7 +82,7 @@ if version >= 508 || !exists("did_jags_syn_inits")
   HiLink jagsOperator       Statement
   HiLink jagsConditional    Conditional
   HiLink jagsRepeat         Repeat
-  HiLink jagsDistribution   Function
+  HiLink jagsDistribution   Type
   HiLink jagsFunction       Function
   HiLink jagsDelimiter      Delimiter
   HiLink jagsInterval       Constant
