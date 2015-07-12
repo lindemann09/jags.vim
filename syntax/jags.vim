@@ -29,7 +29,7 @@ syn keyword jagsFunction  abs arccos arccosh arcsin arcsinh arctan arctanh cos c
 
 " ---------------------------------------------------------------------
 "  Statement: {{{1
-syn keyword jagsStatement   model break next return
+syn keyword jagsStatement   model data break next return
 syn keyword jagsConditional if else 
 syn keyword jagsRepeat      for in repeat while
 
